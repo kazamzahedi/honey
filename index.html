@@ -8,7 +8,6 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="kazam zahedi">
     <title>Jegi Honig</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal|Pattaya&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
@@ -16,28 +15,43 @@
     <script src="js/javascript.js" defer></script>
 </head>
 <body>
-    <header class="header"><!--        HEADER           -->
+    <header class="header center"><!--        HEADER           -->
       <div class="header__wrapper">
-        <a class="header__logo" href="#">LOGO<img src=""/></a>
 
-        <nav id="header__menu" class="header__menu">
-          <ul>
-            <li><a href="#" class="hover">Home</a></li>
-            <li><a href="#">Bienenprocukt</a></li>
-            <li><a href="#">Werte und Qualitat</a></li>
-            <li><a href="#">Wissen und Links</a></li>
-            <li><a href="#">Uber uns</a></li>
-            <li><a href="#">Kantakt Uns</a></li>
+        <a class="header__logo" href="#"><img src="image/logo.png"/></a>
+
+        <nav id="nav" class="nav" role="navigation">
+          <!-- ACTUAL NAVIGATION MENU -->
+          <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Bienenprocukt</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Werte und Qualitat</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Wissen und Links</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Uber uns</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Kantakt Uns</a></li>
           </ul>
+          <!-- MENU TOGGLE BUTTON -->
+          <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+              <title>Toggle Menu</title>
+              <g>
+                <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+              </g>
+            </svg>
+          </a>
+          <!-- ANIMATED BACKGROUND ELEMENT -->
+          <div class="splash"></div>
         </nav>
-        <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+            
       </div>
     </header><!--        END OF HEADER           -->
 
     <main>
-      <section class="slideshow">
+      <section class="banner center">
         <div>
           <h1>lokaler roher Honig</h1>
           <h4>Unser Honig wird nie gekocht</h4>
@@ -45,8 +59,8 @@
         </div>
       </section><!--         END OF slideshow        -->
 
-      <section class="category">
-        <div class="category__section">
+      <section class="services">
+        <div class="services__part">
           <a href="#"><img src="" /></a>
           <h3>Sammeln</h3>
           <p>Je nach Region fällt die Honigernte sehr unterschiedlich aus.  Die
@@ -55,7 +69,7 @@
           <a href="#">Weiterlesen</a>
         </div>
 
-        <div class="category__section">
+        <div class="services__part">
           <a href="#"><img src="" /></a>
           <h3>Ernten</h3>
           <p>Der Imker beschäftigt sich mit der Haltung, der Vermehrung und der
@@ -64,7 +78,7 @@
           <a href="#">Weiterlesen</a>
         </div>
 
-        <div class="category__section">
+        <div class="services__part">
           <a href="#"><img src="" /></a>
           <h3>Einbringen</h3>
           <p>Der Imker bringt seine Bienenvölker in künstlichen Nisthöhlen, den
@@ -73,7 +87,7 @@
           <a href="#">Weiterlesen</a>
         </div>
 
-        <div class="category__section">
+        <div class="services__part">
           <a href="#"><img src="" /></a>
           <h3>Geniessen</h3>
           <p>Die Bedeutung der Imkerei besteht für die Landwirtschaft darin,

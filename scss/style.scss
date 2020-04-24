@@ -3,18 +3,20 @@ $breakpoint-sm: 768px;
 $breakpoint-md: 1025px;
 $breakpoint-lg: 1300px;
 //-----------------------------------Variables
-$blue: #2962ff;
-$dark-blue: #0039cb;
-$light-blue: #768fff;
-$grey: #424242;
-$light-grey: #616161;
-$light-grey-border: #bdbdbd;
-$white: #fff;
+$yellow: #F3C122;
+$brown: #6F503C;
+$light-brown: #8C7363;
+$dark-brown: #372B2B;
+$white: #FFFFFF;
+$light-gray: #ECECEC;
+$dark-gray: #707070;
+$lavender: #F9F8F4;
 $black: #000;
-$red: #d32f2f;
+$red: #d32f2f;      
 
 body {
   font-family: arial;
+  color: g
 }
 
 html, body, ul, li, form, fieldset, legend {
@@ -43,11 +45,15 @@ p, span, a, li, input, label{
 }
 
 header, main, footer {
-  padding: 0 10px;
+  padding: 0;
 }
 
 #block {
   display: none ;
+}
+
+.center {
+  padding: 0 20px;
 }
 
 /*------------------HOME PAGE-------------HEADER-----------------------------*/
@@ -266,7 +272,7 @@ header, main, footer {
 // ---------------------------
 .header {
   height:6rem;
-  background-color:var(--header-bg-color);
+  //background-color:var(--header-bg-color);
 }
 /*------------------HOME PAGE-------------menu end---------------------------*/
 
@@ -275,6 +281,13 @@ header, main, footer {
 /*------------------SINGEL PAGE-----------HEADER-----------------------------*/
 
 /*------------------HOME PAGE-------------BANNER-----------------------------*/
+.banner {
+  background-image: url("../image/banner_img_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 390px;
+  background-position: center;
+}
 /*------------------HOME PAGE-------------SERVICES---------------------------*/
 /*------------------HOME PAGE-------------NEWS-------------------------------*/
 /*------------------HOME PAGE-------------ABOUT US---------------------------*/

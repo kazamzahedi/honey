@@ -22,10 +22,13 @@ p, span, a, li, input, label {
   font-family: 'Arsenal', sans-serif; }
 
 header, main, footer {
-  padding: 0 10px; }
+  padding: 0; }
 
 #block {
   display: none; }
+
+.center {
+  padding: 0 20px; }
 
 /*------------------HOME PAGE-------------HEADER-----------------------------*/
 #header__main-nav {
@@ -226,12 +229,18 @@ header, main, footer {
   transform: translateY(0); }
 
 .header {
-  height: 6rem;
-  background-color: var(--header-bg-color); }
+  height: 6rem; }
 
 /*------------------HOME PAGE-------------menu end---------------------------*/
 /*------------------SINGEL PAGE-----------HEADER-----------------------------*/
 /*------------------HOME PAGE-------------BANNER-----------------------------*/
+.banner {
+  background-image: url("../image/banner_img_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 390px;
+  background-position: center; }
+
 /*------------------HOME PAGE-------------SERVICES---------------------------*/
 /*------------------HOME PAGE-------------NEWS-------------------------------*/
 /*------------------HOME PAGE-------------ABOUT US---------------------------*/

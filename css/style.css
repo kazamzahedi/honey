@@ -1,5 +1,6 @@
 body {
-  font-family: arial; }
+  font-family: arial;
+  color: black; }
 
 html, body, ul, li, form, fieldset, legend {
   margin: 0;
